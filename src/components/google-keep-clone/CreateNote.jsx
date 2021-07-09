@@ -32,6 +32,7 @@ function CreateNote(props) {
 
   return (
     <>
+    <div className="main-note-container">
       <div className="main-note">
         <form action="">
           <input
@@ -45,7 +46,7 @@ function CreateNote(props) {
           <textarea
             cols="30"
             name="content"
-            rows="10"
+            rows=""
             placeholder="Write a Note.."
             value={note.content}
             onChange={InputEvent}
@@ -57,7 +58,7 @@ function CreateNote(props) {
          </Tooltip>
         </form>
       </div>
-
+</div>
     </>
   );
 }
